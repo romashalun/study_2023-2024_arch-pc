@@ -133,12 +133,17 @@ Markdown - легковесный язык разметки, созданный 
 
 ![Работа над отчётом](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab03/report/image/13.png){ #fig:fig13 }
 
+Добавляю изменения на GitHub с помощью комнадой git add и сохраняю изменения с помощью commit и отправляю файлы на сервер (рис. @fig:fig14).
+
+![Добавление файлов на GitHub и отправка на сервер](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab03/report/image/14.png){ #fig:fig14 }
+
+
 
 
 # Выводы
-
+В результате выполнения данной лабораторной работы я освоил процедуры оформления отчетов с помощью легковесного языка разметки Markdown.
 
 
 # Список литературы
 
-1. https://esystem.rudn.ru/pluginfile.php/1584628/mod_resource/content/1/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%E2%84%965.pdf
+1. https://esystem.rudn.ru/pluginfile.php/2091231/mod_resource/content/0/Лабораторная%20работа%20№3.%20Язык%20разметки%20.pdf
