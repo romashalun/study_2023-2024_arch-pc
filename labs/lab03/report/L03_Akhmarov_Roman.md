@@ -119,32 +119,19 @@ Markdown - легковесный язык разметки, созданный 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Выполнение заданий для самостоятельной работы.
+
+Перехожу в директорию lab02/report с помощью cd, чтобы там заполнять отчет по второй лабораторной работе (рис. @fig:fig11).
+
+![Перемещение между директориями](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab03/report/image/11.png){ #fig:fig11 }
+
+Копирую файл L03_Akhmarov_Roman.md с новым именем для заполнения отчета (рис. @fig:fig12).
+
+![Копирование файла](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab03/report/image/12.png){ #fig:fig12 }
+
+Открываю файл с помощью текстового редактора mousepad и начинаю заполнять отчет (рис. @fig:fig13).
+
+![Работа над отчётом](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab03/report/image/13.png){ #fig:fig13 }
 
 
 
