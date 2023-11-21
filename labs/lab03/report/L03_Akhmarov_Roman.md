@@ -112,6 +112,10 @@ Markdown - легковесный язык разметки, созданный 
 
 ![Заполнение отчета](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab03/report/image/9.png){ #fig:fig9 }
 
+Компилирую файл с отчетом. Загружаю отчет на Github. (рис. @fig:fig10)
+
+![Заполнение отчета](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab03/report/image/10.png){ #fig:fig10 }
+
 
 
 
