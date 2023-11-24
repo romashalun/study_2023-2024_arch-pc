@@ -120,8 +120,100 @@ NASM — это открытый проект ассемблера, версии
 
 ![Перемещение между директориями](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/1.png){#fig:fig1}
 
+Создаю в текущем каталоге пустой текстовый файл hello.asm с помощью утилиты touch (рис. @fig:fig2).
+
+![Создание пустого файла](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/2.png){#fig:fig2}
+
+Открываю созданный файл в текстовом редакторе mousepad (рис. @fig:fig3).
+
+![Открытие файла в текстовом редакторе](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/3.png){#fig:fig3}
+
+Заполняю файл, вставляя в него программу для вывода “Hello word!”. Так, как ассемблер
+не является высокоуровневым языком, каждая команда размещается на отдельной
+строке, так же обращаю внимание на регистр, так как Assembly чувствителен к нему (рис. @fig:fig4). 
+
+![Заполнение файла](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/4.png){#fig:fig4}
+
+## Работа с транслятором NASM
+
+Превращаю текст программы для вывода “Hello world!” в объектный код с помощью
+транслятора NASM, используя команду nasm -f elf hello.asm, ключ -f указывает
+транслятору nasm, что требуется создать бинарный файл в формате ELF (рис. @fig:fig5). Далее
+проверяю правильность выполнения команды с помощью утилиты ls: действительно,
+создан файл “hello.o”.
+
+![Компиляция текста программы](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/5.png){#fig:fig5}
+
+## Работа с расширенным синтаксисом командной строки NASM
+
+Ввожу команду, которая скомпилирует файл hello.asm в файл obj.o, использую ключ -o
+который задает имя объектному файлу, так же в файл будут включены символы для
+отладки (ключ -g), с помощью ключа -l будет создан файл листинга list.lst (рис. @fig:fig6).
+Далее проверяю с помощью утилиты ls правильность выполнения команды.
+
+![создан файл листинга list.lst](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/6.png){#fig:fig6}
+
+## Работа с компоновщиком LD
+
+Передаю объектный файл hello.o на обработку компоновщику LD, чтобы получить
+исполняемый файл hello (рис. @fig:fig7). Ключ -о задает имя создаваемого исполняемого
+файла. Далее проверяю с помощью утилиты ls правильность выполнения команды.
+
+![Передача объектного файла на обработку компоновщику](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/7.png){#fig:fig7}
+
+Выполняю следующую команду (рис.  @fig:fig8). Исполняемый файл будет иметь имя main, т.к.
+после ключа -о было задано значение main. Объектный файл, из которого собран этот
+исполняемый файл, имеет имя obj.o
+
+![Передача объектного файла на обработку компоновщику](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/8.png){#fig:fig8}
+
+## Запуск исполняемого файла
+
+Запускаю на выполнение созданный исполняемый файл hello (рис. @fig:fig9).
+
+![Запуск исполняемого файла](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/9.png){#fig:fig9}
+
+## Выполнение заданий для самостоятельной работы.
+
+С помощью утилиты cp создаю в текущем каталоге копию файла hello.asm с именем
+lab4.asm (рис. @fig:fig10).
+
+![Создание копии файла](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/10.png){#fig:fig10}
+
+С помощью текстового редактора mousepad открываю файл lab4.asm и вношу
+изменения в программу так, чтобы она выводила мои имя и фамилию. (рис. @fig:fig11)
+
+![Изменение программы](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/11.png){#fig:fig11}
+
+Компилирую текст программы в объектный файл (рис. @fig:fig12). Проверяю с помощью
+утилиты ls, что файл lab4.o создан.
+
+![Компиляция текста программы](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/12.png){#fig:fig12}
+
+Передаю объектный файл lab4.o на обработку компоновщику LD, чтобы получить
+исполняемый файл lab4 (рис. @fig:fig13).
+
+![Передача объектного файла на обработку компоновщику](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/13.png){#fig:fig13}
+
+Запускаю исполняемый файл lab4, на экран действительно выводятся мои имя и
+фамилия (рис. @fig:fig14)
+
+![Запуск исполняемого файла](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/14.png){#fig:fig14}
+
+С помощью команд git add . и git commit добавляю файлы на GitHub, комментируя
+действие как добавление файлов для лабораторной работы №4 (рис. @fig:fig15)
+
+![Добавление файлов на GitHub](/home/rrakhmarov/work/study/2023-2024/Computer architecture/arch-pc/labs/lab04/report/image/15.png){#fig:fig15}
+
+
 # Выводы
 
-Здесь кратко описываются итоги проделанной работы.
+При выполнении данной лабораторной работы я освоил процедуры компиляции и
+сборки программ, написанных на ассемблере NASM.
 
+## Список литературы
 
+https://esystem.rudn.ru/pluginfile.php/1584628/mod_resource/content/1/%D0%9B
+%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B
+D%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2
+0%E2%84%965.pdf
